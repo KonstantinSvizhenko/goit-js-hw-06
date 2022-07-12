@@ -11,7 +11,7 @@ function onFormSubmit(event) {
         userEmail,
         userPass,
     }
-
+    
     
 
     form.reset()
@@ -20,5 +20,10 @@ function onFormSubmit(event) {
         alert('Всі поля повинні бути заповнені')
     }
   
+    userData.__proto__ = null
+    
     console.log(userData);
+    
 }
+
+    
