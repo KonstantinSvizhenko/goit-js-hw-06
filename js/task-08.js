@@ -17,8 +17,8 @@ function onFormSubmit(event) {
     form.reset()
 
     if (userEmail === '' || userPass === '') {
-        alert('Всі поля повинні бути заповнені')
-    }
+        return alert('Всі поля повинні бути заповнені')
+    } 
   
     userData.__proto__ = null
     
@@ -26,4 +26,3 @@ function onFormSubmit(event) {
     
 }
 
-    
